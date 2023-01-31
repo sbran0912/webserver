@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Beispielserver für Datenübertragung</title>
+    <script type="module" src="main.js"></script>
+  </head>
+
+  <body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <p class="title">Fetch-Api</p>
+        <p class="subtitle">Daten auf dem Server speichern</p>
+      </div>
+    </section>
+
+    <div class = "container">
+      
+      <div class="block">    
+        <div class="columns">
+          <div class="column is-6">
+            <div class="notification">
+              <p class="is-size-3">Bearbeitungsstatus</p>
+              <p class="has-text-grey has-text-weight-semibold" id="hinweis">noch nichts passiert</p>                
+            </div>
+          </div>
+        </div>   
+      </div>        
+
+      <div class="block">
+        <div class="columns">
+          <div class="column is-narrow">
+            <button class="button is-primary is-outlined" id="btnstart">Jetzt starten</button>  
+          </div>
+        </div>
+      </div>
+
+      <canvas></canvas>
+      <div id="output"></div>
+    
+    </div>
+</body>
+
+
+  </html>
